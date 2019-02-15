@@ -1,0 +1,40 @@
+{
+  "id": "",
+  "name": "",
+  "address": "",
+  "img": "",
+  "thumbnail": "",
+  "owner": {
+    "name": "",
+    "img": "",
+    "loginType": "Google | Facebook | Linkedin"
+  },
+  "teams": [
+    {
+      "name": "",
+      "type": "Football | Basketball | Baseball",
+      "img": "",
+      "thumbnail": "",
+      "players": [
+        {
+          "id": "",
+          "name": "",
+          "img": "",
+          "thumbnail": ""
+        },
+        {
+          "id": "",
+          "name": "",
+          "img": "",
+          "thumbnail": ""
+        },
+        {
+          "id": "",
+          "name": "",
+          "img": "",
+          "thumbnail": ""
+        }
+      ]
+    }
+  ]
+}

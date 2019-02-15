@@ -1,0 +1,23 @@
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    match /users/{document=**} {
+      allow read: if true;
+      allow list: if true;
+    }
+    
+    match /users/{userId} {
+    	allow update, delete: if isSignIn() && isOwner(userId)
+    }
+    
+    function  isSignIn(){
+        return request.auth != null;
+    }
+
+    function isOwner(userId){
+        return request.auth.uid == userId;
+    }
+
+  }
+}
